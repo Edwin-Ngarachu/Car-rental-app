@@ -77,7 +77,7 @@ export function AuthProvider({ children }) {
       if (role === 'owner') {
         navigate('/pending-approval', { replace: true });
       } else {
-        navigate('/dashboard', { replace: true });
+        navigate('/', { replace: true });
       }
     } catch (error) {
       console.error('Signup error:', error);
